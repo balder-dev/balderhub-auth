@@ -4,17 +4,23 @@ Features
 
 This section describes all features that are shipped with this package.
 
-
 Scenario Features
 =================
 
-.. note::
-    This package does not provide any scenario features
+.. autoclass:: balderhub.auth.lib.scenario_features.UserLoginFeature
+    :members:
 
-.. todo add your features with .. autoclass
-    .. autoclass:: balderhub.auth.lib.scenario_features.MyScenarioFeature
-        :members:
+Role Features
+-------------
 
+.. autoclass:: balderhub.auth.lib.scenario_features.role.BaseRoleFeature
+    :members:
+
+.. autoclass:: balderhub.auth.lib.scenario_features.role.TokenRoleFeature
+    :members:
+
+.. autoclass:: balderhub.auth.lib.scenario_features.role.UserRoleFeature
+    :members:
 
 Setup Features
 ==============
