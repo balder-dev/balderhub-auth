@@ -128,4 +128,4 @@ dmypy.json
 .pyre/
 
 #project specific
-/balderhub-auth/src/balderhub/auth/_version.py
+/src/balderhub/auth/_version.py
