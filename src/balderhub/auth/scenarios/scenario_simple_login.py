@@ -1,8 +1,8 @@
 from __future__ import annotations
 import balder
 
-from balderhub.auth.lib.scenario_features import UserLoginFeature
-from balderhub.auth.lib.scenario_features.role import UserRoleFeature
+from balderhub.auth.lib.scenario_features.client import UserLoginFeature
+from balderhub.auth.lib.scenario_features.client.role import UserRoleFeature
 
 
 class ScenarioSimpleLogin(balder.Scenario):

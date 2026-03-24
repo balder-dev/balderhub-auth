@@ -1,9 +1,9 @@
-import balderhub.auth.lib.scenario_features.user_login_feature
+import balderhub.auth.lib.scenario_features.client.user_login_feature
 
 from balderhub.auth.contrib.html.pages.login_page import LoginPage
 
 
-class UserLoginFeature(balderhub.auth.lib.scenario_features.user_login_feature.UserLoginFeature):
+class UserLoginFeature(balderhub.auth.lib.scenario_features.client.user_login_feature.UserLoginFeature):
     """
     Implementation of the user login feature for using the :class:`balderhub.contrib.html.pages.LoginPage` HTML pages
     """

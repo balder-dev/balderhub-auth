@@ -7,9 +7,6 @@ This section describes all features that are shipped with this package.
 Scenario Features
 =================
 
-.. autoclass:: balderhub.auth.lib.scenario_features.UserLoginFeature
-    :members:
-
 Client Role Setup Features
 --------------------------
 
@@ -20,6 +17,12 @@ Client Role Setup Features
     :members:
 
 .. autoclass:: balderhub.auth.lib.scenario_features.client.role.UserRoleFeature
+    :members:
+
+Client Scenario Features
+------------------------
+
+.. autoclass:: balderhub.auth.lib.scenario_features.client.UserLoginFeature
     :members:
 
 
