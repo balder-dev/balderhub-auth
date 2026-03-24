@@ -10,17 +10,18 @@ Scenario Features
 .. autoclass:: balderhub.auth.lib.scenario_features.UserLoginFeature
     :members:
 
-Role Features
--------------
+Client Role Setup Features
+--------------------------
 
-.. autoclass:: balderhub.auth.lib.scenario_features.role.BaseRoleFeature
+.. autoclass:: balderhub.auth.lib.scenario_features.client.role.BaseRoleFeature
     :members:
 
-.. autoclass:: balderhub.auth.lib.scenario_features.role.TokenRoleFeature
+.. autoclass:: balderhub.auth.lib.scenario_features.client.role.TokenRoleFeature
     :members:
 
-.. autoclass:: balderhub.auth.lib.scenario_features.role.UserRoleFeature
+.. autoclass:: balderhub.auth.lib.scenario_features.client.role.UserRoleFeature
     :members:
+
 
 Setup Features
 ==============
