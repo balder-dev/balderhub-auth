@@ -1,12 +1,12 @@
 import balderhub.auth.lib.scenario_features.client
-from tests.lib.setup_features.client.dut_manager_feature import DutManagerFeature
+from tests.lib.scenario_features.base_dut_manager_feature import BaseDutManagerFeature
 
 
 class AuthFeature(balderhub.auth.lib.scenario_features.client.AuthenticationFeature):
     """Simple authentication feature backed by a boolean flag."""
     USERNAME = 'testuser'
 
-    dut_sim = DutManagerFeature()
+    dut_sim = BaseDutManagerFeature()
 
     @property
     def is_authenticated(self) -> bool:
