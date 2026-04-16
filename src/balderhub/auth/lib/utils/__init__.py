@@ -3,7 +3,8 @@ from .base_resource import BaseResource
 from .operation import Operation
 from .operation_list import OperationList
 from .resource import Resource
-from .resource_config import ResourceConfig
+from .resource_rule import ResourceRule
+from .resource_rule_list import ResourceRuleList
 from .unresolved_resource import UnresolvedResource
 
 __all__ = [
@@ -12,6 +13,7 @@ __all__ = [
     'Operation',
     'OperationList',
     'Resource',
-    'ResourceConfig',
-    'UnresolvedResource'
+    'ResourceRule',
+    'ResourceRuleList',
+    'UnresolvedResource',
 ]
