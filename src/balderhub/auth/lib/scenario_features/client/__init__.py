@@ -5,6 +5,7 @@ from .authentification_state_machine import AuthenticationStateMachine
 from .has_permissions_for_config import HasPermissionsForConfig
 from .is_unauthenticated_feature import IsUnauthenticatedFeature
 from .operation_handling_feature import OperationHandlingFeature
+from .unresolved_resource_parameter_config import UnresolvedResourceParameterConfig
 from .user_login_feature import UserLoginFeature
 
 __all__ = [
@@ -13,5 +14,6 @@ __all__ = [
     'HasPermissionsForConfig',
     'IsUnauthenticatedFeature',
     'OperationHandlingFeature',
+    'UnresolvedResourceParameterConfig',
     'UserLoginFeature'
 ]
