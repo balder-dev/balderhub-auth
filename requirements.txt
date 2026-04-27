@@ -1,4 +1,4 @@
-baldertest
+baldertest~=0.2.1
 balderplugin-junit
 sphinx-rtd-theme>=1.2.0
 sphinx==6.1.3
