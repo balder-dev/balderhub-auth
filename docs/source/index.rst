@@ -26,4 +26,3 @@ This is a BalderHub project that provides different features and scenarios for t
     features.rst
     examples.rst
     utilities.rst
-    contrib.rst
