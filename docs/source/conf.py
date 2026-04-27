@@ -21,7 +21,15 @@ author = 'Max Stahlschmidt and others'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc']
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx'
+]
+
+# === Intersphinx Mapping ===
+intersphinx_mapping = {
+    'balderhub-data': ('https://hub.balder.dev/projects/data/en/latest/', None),
+}
 
 templates_path = ['_templates']
 exclude_patterns = []
