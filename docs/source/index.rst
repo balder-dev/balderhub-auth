@@ -22,7 +22,7 @@ This is a BalderHub project that provides different features and scenarios for t
 
     installation.rst
     topic_intro.rst
+    examples.rst
     scenarios.rst
     features.rst
-    examples.rst
     utilities.rst
