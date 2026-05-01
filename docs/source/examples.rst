@@ -18,11 +18,8 @@ The scenario looks like shown below:
 
     class ScenarioSimpleLogin(balder.Scenario):
 
-        class System(balder.Device):
-            role = UserRoleFeature()
-
-        @balder.connect('System', over_connection=balder.Connection())
         class Client(balder.Device):
+            role = UserRoleFeature()
             login = UserLoginFeature()
 
 
@@ -86,10 +83,8 @@ Just provide an implementation for them and create a setup like shown below and 
 
     class SetupExample(balder.Setup):
 
-        class DeviceUnderTest(balder.Device):
-            user = UserConfig()
-
         class DeviceToLogin(balder.Device):
+            user = UserConfig()
             login = YourImplementationOfUserLoginFeature()
 
 For Websites
@@ -146,9 +141,7 @@ In you setup you only need to add these both features:
 
     class SetupOffice(balder.Setup):
 
-        class Webserver(balder.Device):
-            user = UserConfig()
-
         class Browser(balder.Device):
+            user = UserConfig()
             login = UserLoginFeature()
             page_login = LoginPage()
