@@ -13,6 +13,11 @@ class ScenarioAuthpermUnauthenticated(AbstractScenarioAuthpermUnauthenticated):
     """
     This scenario tests authentication and permission handling for an unauthenticated client by verifying the behavior
     of non-existing resources, resources that require no authentication, and resources that require authentication.
+
+    .. image:: /_static/ScenarioAuthpermUnauthenticated.svg
+        :align: center
+        :alt: Visual Description of this ``ScenarioAuthpermUnauthenticated``
+
     """
 
     class Server(AbstractScenarioAuthpermUnauthenticated.Server):

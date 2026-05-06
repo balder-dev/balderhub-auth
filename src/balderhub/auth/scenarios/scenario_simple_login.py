@@ -8,6 +8,11 @@ from balderhub.auth.lib.scenario_features.client.role import UserRoleFeature
 class ScenarioSimpleLogin(balder.Scenario):
     """
     This is a simple scenario that evaluates if a user can be logged in.
+
+    .. image:: /_static/ScenarioSimpleLogin.svg
+        :align: center
+        :alt: Visual Description of this ``ScenarioSimpleLogin``
+
     """
 
     class Client(balder.Device):

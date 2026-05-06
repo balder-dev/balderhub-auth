@@ -14,6 +14,11 @@ class ScenarioAuthpermAuthenticated(AbstractScenarioAuthpermAuthenticated):
     This scenario tests authentication and permission handling for an authenticated client by verifying the behavior
     of non-existing resources, resources that require no authentication, resources the client has no permission for,
     and resources the client has permission for.
+
+    .. image:: /_static/ScenarioAuthpermAuthenticated.svg
+        :align: center
+        :alt: Visual Description of this ``ScenarioAuthpermAuthenticated``
+
     """
 
     class Server(AbstractScenarioAuthpermAuthenticated.Server):
