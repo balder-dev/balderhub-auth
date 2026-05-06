@@ -17,13 +17,17 @@ class ScenarioAuthpermUnauthenticated(AbstractScenarioAuthpermUnauthenticated):
 
     class Server(AbstractScenarioAuthpermUnauthenticated.Server):
         """the server device that provides the resources"""
+        #: feature for existence configuration
         existence = scenario_features.server.ExistenceForConfig()
+        #: feature for authentication configuration
         needs_auth_for = scenario_features.server.AuthenticationForConfig()
 
     @balder.connect('Server', balder.Connection())
     class UnauthClient(AbstractScenarioAuthpermUnauthenticated.UnauthClient):
         """the unauthenticated client device that accesses the resources"""
+        #: feature for unauthenticated check
         is_unauth = scenario_features.client.IsUnauthenticatedFeature()
+        #: feature for operation handling
         operation = scenario_features.client.OperationHandlingFeature()
 
     @balder.parametrize_by_feature(

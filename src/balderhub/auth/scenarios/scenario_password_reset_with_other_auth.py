@@ -22,7 +22,9 @@ class ScenarioPasswordResetWithOtherAuth(balder.Scenario):
         The client device that initiates and manages the password
         reset process for another user, while ensuring authentication security.
         """
+        #: state machine for the authentication
         sm_auth = scenario_features.client.AuthenticationStateMachine()
+        #: feature for resetting the password for another user
         password_reset = scenario_features.client.PasswordResetForOtherUserFeature()
 
     @balder.connect(Server, balder.Connection())  # pylint: disable=undefined-variable
@@ -32,10 +34,15 @@ class ScenarioPasswordResetWithOtherAuth(balder.Scenario):
         will be reset. Handles login, logout, and second-factor-based reset
         confirmation.
         """
+        #: user role describing username and password
         role = scenario_features.client.role.UserRoleFeature()
+        #: login feature allowing to perform the login process
         login = scenario_features.client.UserLoginFeature()
+        #: logout feature allowing to perform the logout process
         logout = scenario_features.client.UserLogoutFeature()
+        #: provider for password field values
         passwd_provider = scenario_features.client.PasswordFieldValueProvider()
+        #: feature for resetting the password
         password_reset = scenario_features.client.PasswordResetFeature()
 
     def test_password_reset(self):

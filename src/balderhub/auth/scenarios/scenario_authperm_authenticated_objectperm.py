@@ -20,15 +20,21 @@ class ScenarioAuthpermAuthenticatedObjperm(AbstractScenarioAuthpermAuthenticated
 
     class Server(AbstractScenarioAuthpermAuthenticated.Server):
         """the server device that provides the resources"""
+        #: feature for existence configuration
         existence = scenario_features.server.ExistenceForConfig()
+        #: feature for authentication configuration
         needs_auth_for = scenario_features.server.AuthenticationForConfig()
 
     @balder.connect('Server', balder.Connection())
     class Client(AbstractScenarioAuthpermAuthenticated.Client):
         """the authenticated client device that accesses the resources with object-level permissions"""
+        #: configuration provider for unresolved resource parameters
         param_provider = scenario_features.client.UnresolvedResourceParameterConfig()
+        #: state machine for the authentication
         sm_auth = scenario_features.client.AuthenticationStateMachine()
+        #: feature for operation handling
         operation = scenario_features.client.OperationHandlingFeature()
+        #: feature for permission configuration
         has_perm_for = scenario_features.client.HasPermissionsForConfig()
 
     @balder.fixture('testcase')
