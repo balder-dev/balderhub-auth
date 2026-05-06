@@ -23,6 +23,7 @@ author = 'Max Stahlschmidt and others'
 
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosectionlabel',
     'sphinx.ext.intersphinx'
 ]
 
