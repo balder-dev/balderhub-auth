@@ -19,14 +19,19 @@ class ScenarioAuthpermUnauthenticatedObjperm(AbstractScenarioAuthpermUnauthentic
 
     class Server(AbstractScenarioAuthpermUnauthenticated.Server):
         """The server device that provides existence and authentication configuration features."""
+        #: feature for existence configuration
         existence = scenario_features.server.ExistenceForConfig()
+        #: feature for authentication configuration
         needs_auth_for = scenario_features.server.AuthenticationForConfig()
 
     @balder.connect('Server', balder.Connection())
     class UnauthClient(AbstractScenarioAuthpermUnauthenticated.UnauthClient):
         """The unauthenticated client device that provides parameter resolution and operation handling features."""
+        #: configuration provider for unresolved resource parameters
         param_provider = scenario_features.client.UnresolvedResourceParameterConfig()
+        #: feature for unauthenticated check
         is_unauth = scenario_features.client.IsUnauthenticatedFeature()
+        #: feature for operation handling
         operation = scenario_features.client.OperationHandlingFeature()
 
     @balder.parametrize_by_feature('resource_rule', (Server, 'existence', 'unresolved_resources_that_not_exist'))

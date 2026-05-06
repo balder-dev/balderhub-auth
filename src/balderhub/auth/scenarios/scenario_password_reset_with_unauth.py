@@ -14,9 +14,13 @@ class ScenarioPasswordResetWithUnauth(balder.Scenario):
 
     class UnauthClient(balder.Device):
         """he unauthenticated client device used for performing the password-reset."""
+        #: user role describing username and password
         role = scenario_features.client.role.UserRoleFeature()
+        #: login feature allowing to perform the login process
         login = scenario_features.client.UserLoginFeature()
+        #: provider for password field values
         passwd_provider = scenario_features.client.PasswordFieldValueProvider()
+        #: feature for resetting the password
         password_reset = scenario_features.client.PasswordResetFeature()
 
     def test_password_reset(self):

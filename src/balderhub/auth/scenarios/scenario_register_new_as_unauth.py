@@ -18,8 +18,11 @@ class ScenarioRegisterNewAsUnauth(balder.Scenario):
 
     class UnauthClient(balder.Device):
         """the unauthenticated client device that registers itself"""
+        #: user role describing username and password
         role = scenario_features.client.role.UserRoleFeature()
+        #: login feature allowing to perform the login process
         login = scenario_features.client.UserLoginFeature()
+        #: feature for registering the user
         register_user = scenario_features.client.RegisterSelfFeature()
 
     def test_register_new_user(self) -> None:

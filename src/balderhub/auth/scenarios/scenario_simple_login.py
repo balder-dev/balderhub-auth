@@ -14,7 +14,9 @@ class ScenarioSimpleLogin(balder.Scenario):
         """
         client device where the login can be executed
         """
+        #: user role describing username and password
         role = UserRoleFeature()
+        #: login feature allowing to perform the login process
         login = UserLoginFeature()
 
     def test_login(self):
