@@ -13,6 +13,10 @@ class AbstractScenarioAuthpermUnauthenticated(balder.Scenario):
     """
     This is an abstract scenario for testing authentication and permissions when the user is not
     authenticated.
+
+    .. image:: /_static/AbstractScenarioAuthpermUnauthenticated.svg
+        :align: center
+        :alt: Visual Description of this ``AbstractScenarioAuthpermUnauthenticated``
     """
 
     #: the expected exception(s) that should be raised when entering a non-existing resource/operation

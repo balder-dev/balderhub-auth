@@ -10,6 +10,12 @@ class ScenarioPasswordResetWithUnauth(balder.Scenario):
     This class defines a scenario for testing password reset functionality with an unauthenticated client. It ensures
     that the password reset process works as intended and validates that the user cannot log in with the old password
     after the reset, but can log in with the new password.
+
+    .. image:: /_static/ScenarioPasswordResetWithUnauth.svg
+        :align: center
+        :alt: Visual Description of this ``ScenarioPasswordResetWithUnauth``
+
+
     """
 
     class UnauthClient(balder.Device):

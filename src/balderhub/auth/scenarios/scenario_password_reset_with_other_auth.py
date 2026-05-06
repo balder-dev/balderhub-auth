@@ -12,6 +12,12 @@ class ScenarioPasswordResetWithOtherAuth(balder.Scenario):
     This scenario outlines the process for securely resetting a user's password
     through interactions between a Master Client and a Slave Client, as well as
     confirming the reset process and validating the new password.
+
+    .. image:: /_static/ScenarioPasswordResetWithOtherAuth.svg
+        :align: center
+        :alt: Visual Description of this ``ScenarioPasswordResetWithOtherAuth``
+
+
     """
     class Server(balder.Device):
         """the server device that provides the resources"""

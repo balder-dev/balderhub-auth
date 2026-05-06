@@ -15,6 +15,12 @@ class ScenarioAuthpermUnauthenticatedObjperm(AbstractScenarioAuthpermUnauthentic
     permissions. It resolves unresolved resources using parameters provided by the client and validates that the
     system correctly handles non-existing resources, resources that do not require authentication, and resources
     that require authentication.
+
+    .. image:: /_static/ScenarioAuthpermUnauthenticatedObjperm.svg
+        :align: center
+        :alt: Visual Description of this ``ScenarioAuthpermUnauthenticatedObjperm``
+
+
     """
 
     class Server(AbstractScenarioAuthpermUnauthenticated.Server):

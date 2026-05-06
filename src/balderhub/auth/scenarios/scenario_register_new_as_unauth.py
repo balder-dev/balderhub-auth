@@ -14,6 +14,10 @@ class ScenarioRegisterNewAsUnauth(balder.Scenario):
     unauthenticated and validate the login process before and after the registration. It consists
     of a `Server` device that provides resources and an `UnauthClient` device that performs the
     registration and login process.
+
+    .. image:: /_static/ScenarioRegisterNewAsUnauth.svg
+        :align: center
+        :alt: Visual Description of this ``ScenarioRegisterNewAsUnauth``
     """
 
     class UnauthClient(balder.Device):
