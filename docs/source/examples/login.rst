@@ -5,9 +5,13 @@ This package provides a ready-to-use scenario to test a simple login flow:
 :class:`balderhub.auth.scenarios.ScenarioSimpleLogin`. You can use this scenario for almost all login environments
 independent of their specific implementation or how it can be controlled.
 
+.. note::
+    **Testing Websites?** Have a look at the
+    `contrib/auth guide at the balderhub-html Documentation <https://hub.balder.dev/projects/html/en/latest/contrib/auth.html>`_.
 
-In General
-==========
+
+Login: In General
+=================
 
 The scenario looks like shown below:
 
@@ -29,7 +33,7 @@ the :class:`balderhub.auth.lib.scenario_features.UserLoginFeature`:
 
     # module `balderhub.auth.lib.scenario_features`
 
-    class UserLoginFeature(balder.Feature):
+    class YourImplementationOfUserLoginFeature(balder.Feature):
         """
         This login feature can be assigned to devices that do provide a basic login handling.
         """
@@ -71,7 +75,7 @@ Just provide an implementation for them and create a setup like shown below and 
 
     import balder
     import balderhub.auth.lib.scenario_features.role
-    from lib.pages import YourImplementationOfUserLoginFeature
+    ...
 
     class UserConfig(balderhub.auth.lib.scenario_features.role.UserRoleFeature):
 
@@ -84,8 +88,8 @@ Just provide an implementation for them and create a setup like shown below and 
             user = UserConfig()
             login = YourImplementationOfUserLoginFeature()
 
-For Websites
-============
+Login: For Websites
+===================
 
 If you want to use the :class:`balderhub.auth.scenarios.ScenarioSimpleLogin` within websites, you can use the contrib
 feature implementation :class:`balderhub.auth.contrib.html.setup_features.UserLoginFeature`.

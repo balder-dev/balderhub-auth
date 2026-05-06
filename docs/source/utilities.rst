@@ -4,10 +4,41 @@ Utilities
 This section shows general objects and helper functions that are used with this package.
 
 
-.. note::
-    This BalderHub project doesn't have any utilities.
+Permission Test Utilities
+=========================
 
+Resource
+--------
 
-.. todo add your scenarios with .. autoclass
-    .. autoclass:: balderhub.auth.lib.utilities.MyExampleUtility
-        :members:
+.. autoclass:: balderhub.auth.lib.utils.BaseResource
+    :members:
+
+.. autoclass:: balderhub.auth.lib.utils.Resource
+    :members:
+
+.. autoclass:: balderhub.auth.lib.utils.UnresolvedResource
+    :members:
+
+Operation
+---------
+
+.. autoclass:: balderhub.auth.lib.utils.Operation
+    :members:
+
+.. autoclass:: balderhub.auth.lib.utils.OperationList
+    :members:
+
+Action
+------
+
+.. autoclass:: balderhub.auth.lib.utils.Action
+    :members:
+
+Rules
+-----
+
+.. autoclass:: balderhub.auth.lib.utils.ResourceRule
+    :members:
+
+.. autoclass:: balderhub.auth.lib.utils.ResourceRuleList
+    :members:
