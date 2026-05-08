@@ -30,6 +30,9 @@ extensions = [
 # === Intersphinx Mapping ===
 intersphinx_mapping = {
     'balderhub-data': ('https://hub.balder.dev/projects/data/en/latest/', None),
+    'balderhub-http': ('https://hub.balder.dev/projects/http/en/latest/', None),
+    'balderhub-webdriver': ('https://hub.balder.dev/projects/webdriver/en/latest/', None),
+    'balderhub-selenium': ('https://hub.balder.dev/projects/selenium/en/latest/', None),
 }
 
 templates_path = ['_templates']
