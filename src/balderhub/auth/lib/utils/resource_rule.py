@@ -109,11 +109,14 @@ class ResourceRule:
         if not isinstance(self._resource, UnresolvedResource):
             raise ValueError('parameters can only be provided for unresolved resources')
 
-        match_rule = self._rule(parameter)
-        if not isinstance(match_rule, bool):
-            raise ValueError(f'unexpected return value of rule function: `{match_rule}` - should be a boolean value')
-        if not match_rule:
-            return None
+        if self._rule is not None:
+            match_rule = self._rule(parameter)
+            if not isinstance(match_rule, bool):
+                raise ValueError(
+                    f'unexpected return value of rule function: `{match_rule}` - should be a boolean value'
+                )
+            if not match_rule:
+                return None
 
         result = OperationList()
 
